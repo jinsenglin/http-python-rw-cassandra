@@ -54,6 +54,24 @@ Exit Cassandra Shell
 exit
 ```
 
+Create Python Virtual Environment
+
+```
+virtualenv py_venv
+```
+
+Enter Python Virtual Environment
+
+```
+source py_venv/bin/activate
+```
+
+Install Python Package cassandra-driver
+
+```
+pip install cassandra-driver==3.10
+```
+
 Launch R HTTP API
 
 ```
@@ -76,4 +94,10 @@ Use W HTTP API
 
 ```
 curl http://localhost:8082/
+```
+
+Exit Python Virtual Environment
+
+```
+deactivate
 ```
