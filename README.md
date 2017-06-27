@@ -11,3 +11,9 @@ Enter Cassandra Shell
 ```
 docker run -it --link local-cassandra:cassandra --rm cassandra:3.10 cqlsh cassandra
 ```
+
+Create Keyspace
+
+```
+CREATE KEYSPACE "application_n" WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+```
