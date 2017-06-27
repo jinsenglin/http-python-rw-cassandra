@@ -34,3 +34,9 @@ CREATE TABLE "stats" (
     PRIMARY KEY (id, ts)
 );
 ```
+
+Insert Row
+
+```
+INSERT INTO stats (id, ts, value) VALUES (1, toTimestamp(now()), 0.1);
+```
