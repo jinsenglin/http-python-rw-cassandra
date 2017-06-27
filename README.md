@@ -53,3 +53,27 @@ Exit Cassandra Shell
 ```
 exit
 ```
+
+Launch R HTTP API
+
+```
+python r.py
+```
+
+Use R HTTP API
+
+```
+curl http://localhost:8081/
+```
+
+Launch W HTTP API
+
+```
+python w.py
+```
+
+Use W HTTP API
+
+```
+curl http://localhost:8082/
+```
