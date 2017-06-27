@@ -47,3 +47,9 @@ Select Latest Row
 ```
 SELECT * FROM stats limit 1;
 ```
+
+Exit Cassandra Shell
+
+```
+exit
+```
