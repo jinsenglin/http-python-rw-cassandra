@@ -41,3 +41,9 @@ Insert Two Rows
 INSERT INTO stats (id, ts, value) VALUES (1, toTimestamp(now()), 0.1);
 INSERT INTO stats (id, ts, value) VALUES (1, toTimestamp(now()), 0.2);
 ```
+
+Select Latest Row
+
+```
+SELECT * FROM stats limit 1;
+```
