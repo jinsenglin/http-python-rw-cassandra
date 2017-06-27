@@ -17,3 +17,9 @@ Create Keyspace
 ```
 CREATE KEYSPACE "application_n" WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
 ```
+
+Use Keyspace
+
+```
+USE "application_n";
+```
