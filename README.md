@@ -31,12 +31,13 @@ CREATE TABLE "stats" (
     id int,
     ts timestamp,
     value float,
-    PRIMARY KEY (id, ts)
-);
+    PRIMARY KEY (id, ts))
+WITH CLUSTERING ORDER BY (ts DESC);
 ```
 
-Insert Row
+Insert Two Rows
 
 ```
 INSERT INTO stats (id, ts, value) VALUES (1, toTimestamp(now()), 0.1);
+INSERT INTO stats (id, ts, value) VALUES (1, toTimestamp(now()), 0.2);
 ```
