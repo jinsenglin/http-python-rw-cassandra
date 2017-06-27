@@ -23,3 +23,14 @@ Use Keyspace
 ```
 USE "application_n";
 ```
+
+Create Table
+
+```
+CREATE TABLE "stats" (
+    id int,
+    ts timestamp,
+    value float,
+    PRIMARY KEY (id, ts)
+);
+```
